@@ -66,29 +66,65 @@
       <section class="portfolio section">
         <div class="container">
           <h1 class="visually-hidden">Портфолио</h1>
-          <ul class="list button-list">
-            <li class="filter-item">
-              <button type="button" class="button filter-button">Все</button>
-            </li>
-            <li class="filter-item">
-              <button type="button" class="button filter-button">
-                Веб-сайты
-              </button>
-            </li>
-            <li class="filter-item">
-              <button type="button" class="button filter-button">
-                Приложения
-              </button>
-            </li>
-            <li class="filter-item">
-              <button type="button" class="button filter-button">Дизайн</button>
-            </li>
-            <li class="filter-item">
-              <button type="button" class="button filter-button">
-                Маркетинг
-              </button>
-            </li>
-          </ul>
+          <form class="filter-form">
+            <ul class="list button-list">
+              <li class="filter-item">
+                <input
+                  name="filter-input"
+                  type="radio"
+                  id="filter-input-1"
+                  class="filter-input visually-hidden"
+                />
+                <label for="filter-input-1" class="filter-button button"
+                  >Все</label
+                >
+              </li>
+              <li class="filter-item">
+                <input
+                  name="filter-input"
+                  type="radio"
+                  id="filter-input-2"
+                  class="filter-input visually-hidden"
+                />
+                <label for="filter-input-2" class="filter-button button"
+                  >Веб-сайты</label
+                >
+              </li>
+              <li class="filter-item">
+                <input
+                  name="filter-input"
+                  type="radio"
+                  id="filter-input-3"
+                  class="filter-input visually-hidden"
+                />
+                <label for="filter-input-3" class="filter-button button"
+                  >Приложения</label
+                >
+              </li>
+              <li class="filter-item">
+                <input
+                  name="filter-input"
+                  type="radio"
+                  id="filter-input-4"
+                  class="filter-input visually-hidden"
+                />
+                <label for="filter-input-4" class="filter-button button"
+                  >Дизайн</label
+                >
+              </li>
+              <li class="filter-item">
+                <input
+                  name="filter-input"
+                  type="radio"
+                  id="filter-input-5"
+                  class="filter-input visually-hidden"
+                />
+                <label for="filter-input-5" class="filter-button button"
+                  >Маркетинг</label
+                >
+              </li>
+            </ul>
+          </form>
           <ul class="list example-list">
             <li class="example-item">
               <a href="" class="example-link link">
