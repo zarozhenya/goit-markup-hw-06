@@ -582,9 +582,23 @@
             </li>
           </ul>
         </div>
+        <div class="subscribe">
+          <label for="subscribe-input" class="subscribe-label"
+            >присоединяйтесь
+          </label>
+          <form class="subscribe-field">
+            <input type="email" placeholder="E-mail" class="subscribe-input" />
+            <button type="submit" class="subscribe-button button">
+              Подписаться
+              <svg class="subscribe-icon" width="24" height="24">
+                <use href="./images/symbol-defs.svg#icon-send"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
       </div>
     </footer>
-    <div class="backdrop" data-modal>
+    <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button type="button" class="button-modal-exit" data-modal-close>
           <svg class="close-icon" width="30" height="30">
@@ -635,15 +649,18 @@
                 height="100%"
               ></use>
             </svg>
-            Соглашаюсь с рассылкой и принимаю
-            <a
-              href=""
-              class="modal-agree-link"
-              rel="noopener nofollow noreferrer"
-            >
-              Условия договора
-            </a>
+            <span class="modal-agree-text">
+              Соглашаюсь с рассылкой и принимаю
+              <a
+                href=""
+                class="modal-agree-link"
+                rel="noopener nofollow noreferrer"
+              >
+                Условия договора
+              </a>
+            </span>
           </label>
+          <button type="submit" class="submit-button button">Отправить</button>
         </form>
       </div>
     </div>
