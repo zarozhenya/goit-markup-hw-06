@@ -650,10 +650,12 @@ ul {
   justify-content: center;
   align-items: center;
   border-radius: 50%;
+  transition: fill var(--animation-time) var(--animation-cubic);
 }
 .button-modal-exit:hover,
 .button-modal-exit:focus {
   cursor: pointer;
+  fill: var(--accent-color);
 }
 .modal-title {
   margin-bottom: 12px;
@@ -731,6 +733,9 @@ ul {
   fill: #ffffff;
   stroke: #ffffff;
 }
+.modal-agree-input:focus + .modal-agree-label .modal-checkbox-icon {
+  border-color: var(--accent-color);
+}
 .modal-agree-label {
   display: flex;
   justify-content: center;
@@ -746,6 +751,10 @@ ul {
   fill: transparent;
   stroke: transparent;
   margin-right: 7px;
+  transition: background-color var(--animation-time) var(--animation-cubic),
+    border-color var(--animation-time) var(--animation-cubic),
+    fill var(--animation-time) var(--animation-cubic),
+    stroke var(--animation-time) var(--animation-cubic);
 }
 .modal-agree-link {
   color: var(--accent-color);
